@@ -1,0 +1,13 @@
+.lazy-image {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    background: #bbbbbb; /* Placeholder background */
+    aspect-ratio: 3 / 2; /* Width to height ratio, example 600/400 = 3:2 */
+    object-fit: cover; /* Optional: to nicely fit the image */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.lazy-image[src] {
+    opacity: 1;
+}
